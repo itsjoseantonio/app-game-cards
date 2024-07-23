@@ -1,0 +1,38 @@
+/*
+* Colors
+*/
+$white: #fff;
+$black: #000;
+$isabelline: #f2f1ef;
+$onyx: #363538;
+$gray: #d8cfd0;
+
+/*
+* Variables for breakpoints
+*/
+$xs: 320px;
+$sm: 580px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+/*
+* Map for breakpoints
+*/
+$breakpoints: (
+    'extra-small': (
+        min-width: $xs,
+    ),
+    'small': (
+        min-width: $sm,
+    ),
+    'medium': (
+        min-width: $md,
+    ),
+    'large': (
+        min-width: $lg,
+    ),
+    'extra-large': (
+        min-width: $xl,
+    ),
+);

@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+// Media queries Mixin
+@mixin responsive($size) {
+    $query: map-get($breakpoints, $size);
+    $min-width: map-get($query, min-width);
+
+    @media (min-width: $min-width) {
+        @content;
+    }
+}
+
+// Flex Center Box
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Absolute Center
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Flex column
+@mixin flex-column($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+// Truncated text //
+@mixin truncated-text($lines) {
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
